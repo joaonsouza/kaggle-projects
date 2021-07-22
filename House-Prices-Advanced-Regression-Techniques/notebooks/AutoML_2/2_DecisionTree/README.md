@@ -1,0 +1,97 @@
+# Summary of 2_DecisionTree
+
+[<< Go back](../README.md)
+
+
+## Decision Tree
+- **n_jobs**: -1
+- **criterion**: gini
+- **max_depth**: 3
+- **explain_level**: 2
+
+## Validation
+ - **validation_type**: split
+ - **train_ratio**: 0.75
+ - **shuffle**: True
+ - **stratify**: True
+
+## Optimized metric
+logloss
+
+## Training time
+
+13.5 seconds
+
+## Metric details
+|           |    score |   threshold |
+|:----------|---------:|------------:|
+| logloss   | 0.373967 | nan         |
+| auc       | 0.844257 | nan         |
+| f1        | 0.623632 |   0.294652  |
+| accuracy  | 0.838657 |   0.639722  |
+| precision | 0.752567 |   0.639722  |
+| recall    | 1        |   0.0433966 |
+| mcc       | 0.519502 |   0.639722  |
+
+
+## Confusion matrix (at threshold=0.639722)
+|                  |   Predicted as <=50K |   Predicted as >50K |
+|:-----------------|---------------------:|--------------------:|
+| Labeled as <=50K |                 4387 |                 241 |
+| Labeled as >50K  |                  744 |                 733 |
+
+## Learning curves
+![Learning curves](learning_curves.png)
+
+## Permutation-based Importance
+![Permutation-based Importance](permutation_importance.png)
+## Confusion Matrix
+
+![Confusion Matrix](confusion_matrix.png)
+
+
+## Normalized Confusion Matrix
+
+![Normalized Confusion Matrix](confusion_matrix_normalized.png)
+
+
+## ROC Curve
+
+![ROC Curve](roc_curve.png)
+
+
+## Kolmogorov-Smirnov Statistic
+
+![Kolmogorov-Smirnov Statistic](ks_statistic.png)
+
+
+## Precision-Recall Curve
+
+![Precision-Recall Curve](precision_recall_curve.png)
+
+
+## Calibration Curve
+
+![Calibration Curve](calibration_curve_curve.png)
+
+
+## Cumulative Gains Curve
+
+![Cumulative Gains Curve](cumulative_gains_curve.png)
+
+
+## Lift Curve
+
+![Lift Curve](lift_curve.png)
+
+
+
+## SHAP Importance
+![SHAP Importance](shap_importance.png)
+
+## SHAP Dependence plots
+
+### Dependence (Fold 1)
+![SHAP Dependence from Fold 1](learner_fold_0_shap_dependence.png)
+
+[<< Go back](../README.md)
